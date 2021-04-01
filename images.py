@@ -1,3 +1,5 @@
+import os
+import sys
 from rpca import RobustPCA
 from matplotlib import pyplot as plt
 from sklearn import datasets
