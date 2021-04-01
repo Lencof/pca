@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
+import sys
 from __future__ import division, print_function
 import numpy as np
 from PIL import Image
