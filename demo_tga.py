@@ -8,6 +8,7 @@ Uses data from http://perception.i2r.a-star.edu.sg/bk_model/bk_index.html
 
 from __future__ import division, print_function
 import os
+import sys
 import time
 import numpy as np
 from PIL import Image
