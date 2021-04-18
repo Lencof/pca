@@ -1,3 +1,4 @@
+pyinstaller
 fetch_kddcup99
 numpy 
 matplotlib 
