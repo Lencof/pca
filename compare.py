@@ -1,3 +1,7 @@
+# compare.py
+
+import os
+import sys
 from sklearn.datasets import fetch_kddcup99, fetch_covtype, fetch_mldata
 import numpy as np
 from numpy.linalg import matrix_rank
