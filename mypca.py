@@ -1,3 +1,5 @@
+import os
+import sys
 import numpy as np
 from numpy.linalg import norm, matrix_rank
 from scipy.linalg import svd, diagsvd
@@ -13,11 +15,11 @@ def soft_thresh(x, t):
     assert sign.shape == thresh.shape
     return np.multiply(sign, thresh)
 
-
+# create def norm_1(X):
 def norm_1(X):
     return np.sum(np.abs(X))
 
-
+# create def sv_thresh(X, t, k):
 def sv_thresh(X, t, k):
     m, n = X.shape
     U, s, V = randomized_svd(X, k)  #pca(X, raw=True, k=25)
@@ -29,7 +31,7 @@ def sv_thresh(X, t, k):
     assert ret.shape == X.shape
     return ret, greater_sv
 
-
+# create def mypcp(M, lam=None, mu=None, max_iter=1000, sigma=1e-7, verbose=False,
 def mypcp(M, lam=None, mu=None, max_iter=1000, sigma=1e-7, verbose=False,
           throttle=False):
     # See http://arxiv.org/pdf/1009.5055v3.pdf
